@@ -7,7 +7,7 @@
       <th>Address</th>
       <th>Phone number</th>
       <th>Category</th>
-      <th></th>
+      <th colspan="2"></th>
     </tr>
   </thead>
 
@@ -19,6 +19,7 @@
         <td><%= restaurant.phone_number %></td>
         <td><%= restaurant.category %></td>
         <td><%= link_to 'Show', restaurant %></td>
+        <td><%= link_to 'New', new_restaurant_path %></td>
       </tr>
     <% end %>
   </tbody>
